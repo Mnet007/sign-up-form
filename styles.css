@@ -1,0 +1,153 @@
+body{
+  font-family: "Josefin Slab", serif;
+  font-optical-sizing: auto;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+}
+
+.img{
+    display: flex;
+    width: 40%;
+    height: 100vh;
+    margin: 1% 1% 1% 1%;
+    background: url(./assets/cristina-stelea-nH4pUvnrUvc-unsplash.jpg) no-repeat center;
+    background-size: cover;
+    align-content: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.555);
+    border-radius: 5px;
+}
+
+.img-description{
+    margin-top: auto;
+    margin-bottom: 10px;
+    font-size: 100%;
+    color: rgba(255, 255, 255, 0.466);
+    font-weight: 900;
+    background: rgba(0, 0, 0, 0.473);
+    padding: 5px;
+}
+
+a{
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.form{
+    width: 60%;
+    margin: 0;
+    padding: 0;
+    margin-top: 5%;
+}
+
+.form > * {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.form-label{
+    font-weight: 900;
+    font-size: 20px;
+    display: block;
+    transition: all 0.5s;
+    transform: translateY(-3.4rem);
+}
+
+.form-input{
+    border: 2px solid gray;
+    color: #333;
+    font-size: 1.2rem;
+    padding: 0.2rem 0.2rem;
+    border-radius: 0.2rem;
+    width: 100%;
+    display: block;
+    transition: all 0.5s;
+    margin-top: 5%;
+    padding-right: 10%;
+}
+
+.form-input:focus{
+    transition: 0.2s;
+    outline: none;
+    border: 2px solid blue;
+}
+
+.form-input:placeholder-shown + .form-label{
+    opacity: 0;
+    visibility: hidden;
+}
+
+form{
+    padding-top: 3%;
+    width: 80%;
+    margin-left: 0%;
+    background-color: rgba(0, 0, 0, 0.034);
+}
+
+.inputs{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+}
+
+.inputs > :last-child{
+    padding-left: 10%;
+}
+
+.form-submit{
+    margin-top: 20px;
+    position: absolute;
+    font-size: 10px;
+}
+
+.btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 30px;
+    border-radius: 6px;
+    border: none;
+    font-size: 30px;
+    background: #596D48;
+    color: white;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    cursor: pointer;
+    border-bottom: 2px solid rgb(139, 139, 139);
+    border-right: 2px solid rgb(139, 139, 139);
+}
+
+.btn:hover{
+    outline: 0;
+    background: #38551c;
+}
+
+.login{
+    color: #596D48;
+}
+
+.error{
+    border: 2px solid red;
+}
+
+.errorMessage{
+    font-size: 25px;
+    font-weight: 900;
+    color: red;
+}
+
+.img-logo{
+    width: 10%;
+    height: fit-content;
+    position: fixed;
+    margin-left: 30%;
+    background-color: rgba(0, 0, 0, 0.178);
+}
+
+.odin-img{
+    width: 100%;
+}
